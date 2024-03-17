@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    th,tr,td{
+        border: 1px solid black;
+        font-family: sans-serif;
+        font-weight: 100;
+        
+    }
+    table{
+        border: 1px solid black;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bold{
+        /* font-family: 'Courier New', Courier, monospace; */
+        font-weight: bold;
+        text-align: center;
+    }
+    #h{
+        text-align: center;
+    }
+    #spec{
+        border: 0px;
+    }
+
+</style>
+<body>
+    <div id="tp">
+    <h1 id="h">Specification Table with Hours and Marks</h1>
+    <table>
+        <tr>
+            <th rowspan="2" class="bold" >Unit No.</th>
+            <th rowspan="2" class="bold">Unit Title</th>
+            <th rowspan="2" class="bold">Teaching hour </th>
+            <th  colspan="4" class="bold">Distribution of Theory marks</th>
+      
+        </tr>
+        <tr>
+            <th>R Level</th>
+            <th>U Level</th>
+            <th>A Level</th>
+            <th>Total Marks</th>
+            <!-- <th>5</th>
+            <th>6</th>
+            <th>7</th> -->
+       
+        </tr>
+        <tr>
+            <th>I</th>
+            <th>Introduction to Internet Technology</th>
+            <th>2</th>
+            <th>4</th>
+            <th>4</th>
+            <th>0</th>
+            <th>8</th>
+        </tr>
+        <tr>
+            <th>II</th>
+            <th>Basics of HTML & CSS</th>
+            <th>6</th>
+            <th>0</th>
+            <th>2</th>
+            <th>6</th>
+            <th>8</th>
+        </tr>
+        <tr>
+            <th>III</th>
+            <th>Active Server Pages 3.0</th>
+            <th>6</th>
+            <th>4</th>
+            <th>8</th>
+            <th>0</th>
+            <th>12</th>
+        </tr>
+        <tr>
+            <th>IV</th>
+            <th>Server Side Coding with VBScript and XML</th>
+            <th>8</th>
+            <th>2</th>
+            <th>4</th>
+            <th>8</th>
+            <th>14</th>
+        </tr>
+        <tr>
+            <th>V</th>
+            <th>ASP Objects & Components</th>
+            <th>10</th>
+            <th>4</th>
+            <th>4</th>
+            <th>6</th>
+            <th>14</th>
+        </tr>
+        <tr>
+            <th>VI</th>
+            <th>Accessing database with ASP & ADO</th>
+            <th>10</th>
+            <th>4</th>
+            <th>4</th>
+            <th>6</th>
+            <th>14</th>
+        </tr>
+        <tr>
+            <td id="spec"></td>
+            <td class="bold">Total</td>
+            <td class="bold">42</td>
+            <td class="bold">18</td>
+            <td class="bold">26</td>
+            <td class="bold">26</td>
+            <td class="bold">70</td>
+        </tr>
+
+    </table>
+</div>
+</body>
+</html>
