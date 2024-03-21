@@ -5,133 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .parent{
-            background-color: aquamarine;
-            border: 2px solid black;
-            width: 300px;
-            height: 525px;
-        }
-        .page_header{
-            background-color: aquamarine;
-            border: 2px solid black;
-            width: 250px;
-            height: 40px;
-            margin: auto;
-            margin-top: 15px;
+        .flex{
             display: flex;
-            justify-content: left;
-            align-items: center;
-            text-indent: 10px;
-        }
-        .Nav{
-            background-color: aquamarine;
             border: 2px solid black;
-            width: 250px;
-            height: 40px;
-            margin: auto;
-            margin-top: 15px;
-            color: 2px black;
+            flex-grow: 2;
+        }
+        .flexcol{
+            flex-direction: column;
+        }
+        .flexrow{
+            flex-direction: row;
+        }
+        .flexgrow0{
+            flex-grow: 0;
+        }
+        .flexgrow1{
+            flex-grow: 1;
+        }
+        .border {
+            border: 2px solid black;
+            margin: 3%;
+            padding: 1.5%;
+        }
+        .main{
+            flex-basis: 1;
+            border: 2px solid black;
+            height: 5em;
+        }
+        .backcolor{
+            background-color: aquamarine;
+        }
+        .boxcolor{
+            background-color: rgb(41, 147, 112);
+        }
+        .boxcolor1{
+            background-color: white;
+        }
+        .left{
+            justify-content: center;
+            align-items: center;
+            width: 70%;
+        }
+        .left1{
+            width: 30%;
             display: flex;
+            justify-content: center;
             align-items: center;
-            text-align: right;
-            text-indent: 10px;
-        }
-        .Articles{
-            background-color: aquamarine;
-            border: 2px solid black;
-            width: 250px;
-            height: 200px;
-            margin: auto;
-            margin-top: 15px;
-            text-indent: 10px;
-            line-height: 2px;
         }
 
-        .Section{
-            background-color: aquamarine;
-            border: 2px solid black;
-            width: 250px;
-            height: 40px;
-            margin: auto;
-            margin-top: 15px;
-            text-indent: 10px;
-            display: flex;
-            align-items: center;
-            text-indent: 10px;
-
-        }
-        .Aside{
-            background-color: aquamarine;
-            border: 2px solid black;
-            width: 250px;
-            height: 40px;
-            margin: auto;
-            margin-top: 15px;
-            display: flex;
-            align-items: center;
-            text-indent: 10px;
-        }
-        .footer{
-            background-color: aquamarine;
-            border: 2px solid black;
-            width: 250px;
-            height: 40px;
-            margin: auto;
-            margin-top: 15px;
-            display: flex;
-            align-items: center;
-            text-indent: 10px;
-        }
-        .Articles_header{
-            background-color: aquamarine;
-            border: 2px solid black;
-            width: 200px;
-            height: 30px;
-            margin: auto;
-            margin-top: 2px;
-            text-indent: 10px;
-            align-items: center;
-            line-height: 1px;
-        }
-        .Main{
-            background-color: aquamarine;
-            border: 2px solid black;
-            width: 200px;
-            height: 100px;
-            margin: auto;
-            margin-top: 15px;
-            text-indent: 10px;
-            align-items: center;
-            line-height: 1px;
-        }
     </style>
 </head>
 <body>
-    <div class="parent">
-        <div class="page_header">
-            <p>Page Header</p>
-        </div>
-        <div class="Nav">
-            <p>Navigation</p>
-        </div>
-        <div class="Articles">
-            <p>Article</p>
-            <div class="Articles_header">
-                <p>Article Header</p>
+    <div class="flexcol backcolor ">
+        <div class="flexgrow0 border boxcolor">Page Header</div>
+        <div class="flexgrow1 border boxcolor">Navigation</div>
+
+        <div class=" flex border boxcsolor">
+            <div class=" border left">
+                <p class="">Article</p>
+                <p class="border boxcolor1">Article header</p>
+                <p class="border main boxcolor1">Main</p>
             </div>
-            <div class="Main">
-                <p>Main</p>
+            <div class=" border boxcolor left1">
+                <p>Aside</p>
             </div>
         </div>
-        <div class="Section">
-            <p>Section</p>
-        </div>
-        <div class="Aside">
-            <p>Aside</p>
-        </div>
-        <div class="footer">
-            <p>Footer</p>
-        </div>
+
+        <div class="flexgrow1 border boxcolor">Section</div>
+        <div class="flexgrow1 border boxcolor">Navigation</div>
+        <div class="flexgrow1 border boxcolor">Aside</div>
+        <div class="flexgrow1 border boxcolor">Footer</div>
+    </div>
 
     </div>
 </body>
