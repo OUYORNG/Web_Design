@@ -4,108 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .flex{
-            display: flex;
-            border: 2px solid black;
-            flex-grow: 2;
-        }
-        .flex1{
-            display: flex;
-            border: 2px solid black;
-            flex-grow: 2;
-            /* width: 125%; */
-        }
-        .flexcol{
-            flex-direction: column;
-        }
-        .flexrow{
-            flex-direction: row;
-        }
-        .flexgrow0{
-            flex-grow: 0;
-        }
-        .flexgrow1{
-            flex-grow: 1;
-        }
-        .border {
-            border: 2px solid black;
-            margin: 5px;
-            padding: 1.5%;
-        }
-        .bordernone{
-            border: 0px solid black;
-            margin: 0%;
-            padding: 0%;
-
-        }
-        .main{
-            flex-basis: 1;
-            border: 2px solid black;
-            height: 5em;
-        }
-        .backcolor{
-            background-color: aquamarine;
-        }
-        .boxcolor{
-            background-color: rgb(41, 147, 112);
-        }
-        .boxcolor1{
-            background-color: white;
-        }
-        .left{
-            justify-content: center;
-            align-items: center;
-        }
-        .left1{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .left2{
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .tow{
-            flex-grow: 2;
-        }
-
-    </style>
 </head>
+<style>
+    .flex{
+        display: flex;
+    }
+    .flexcol{
+        flex-direction: column;
+    }
+    .grow1{
+        flex-grow: 1;
+    }
+    .grow0{
+        flex-grow: 0;
+    }
+    .border{
+        border: 1px solid black;
+        margin: 5px;
+    }
+    .Sign-in{
+        border-radius: 5px;
+    }
+</style>
 <body>
-    <div class=" flexcol ">
-        <div class=" flexgrow1 border boxcolor">Page Header</div>
-        <div class="flexgrow1 border boxcolor">Navigation</div>
+    <div class="parent border flex ">
+        <div class=" border Child_Left grow1">
+            <div class="Panel-logo grow0 border">Hello</div>
+            <div class="Form grow1 border">
+                <div class="border ">Welcome Back</div>
+                <div class="border">Please enter your credentials to access your account</div>
+                <div class="border ">Sign in with Google</div>
+                <div class="border ">------or------</div>
+                <div class="border ">Email</div>
+                <div class="border ">Textfields</div>
+                <div class="border ">Password*</div>
+                <div class="border ">Min 8 characters </div>
+                <div class="border ">Remember me</div>
+                <div style="text-align: center;" class="border "><button class="Sign-in ">Sign in</button></div>
+                <div class="border Notregisteredyet? flex">
+                    <div class="border">Not registered yet?</div>
+                    <div class="border">Create an Account</div>
 
-        <div class=" flex bordernone boxcsolor">
-            <div style="flex-grow: 6;" class=" flex flexgrow1 flexcol bordernone">
-                <div class="border">
-                    <p class="">Article</p>
-                    <p class="border boxcolor1">Article header</p>
-                    <p class="border main boxcolor1">Main</p>
                 </div>
-                <div class="flexgrow1 border boxcolor">Section</div>
-            </div>
-            
-            <div class=" flex bordernone flexcol">
-                <div class="bordernone flexgrow0 flex ">
-                    <div class="border flexgrow1">
-                        <p>aside left</p>
-                    </div >
-                    <div class="border flexgrow1">
-                        <p>aside right</p>
-                    </div>
-                </div>
-                <div class="border flexgrow1">
-                    <p>Aside bottom</p>
-                </div>
+
+
+
+
+
+
+
             </div>
         </div>
 
-        <div class="flexgrow1 border boxcolor">Footer</div>
-    </div>
+
+
+
+        <div class="border Child_Right_Photo grow1">
+            <div>image</div>
+        </div>
 
     </div>
 </body>
