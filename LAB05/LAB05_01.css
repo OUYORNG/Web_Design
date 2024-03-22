@@ -1,0 +1,40 @@
+/* .wrapper {
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.child {
+    width: 70px;
+    height: 70px;
+    background-color: orange;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.wrapper {
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    position: relative;
+}
+
+.child {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    translate: 0% -50%;
+
+    width: 70px;
+    height: 70px;
+    background-color: orange;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
