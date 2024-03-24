@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,500,700,400italic|Material+Icons">
+</head>
+<style>
+    .flex{
+        display: flex;
+    }
+    .grow1{
+         flex-grow: 1;
+    }
+    .grow0{
+        flex-grow: 0;
+    }
+    .flexcol{
+        display: flex;
+        flex-direction: column;
+    }
+    .border{
+        border: 2px solid black;
+        margin: 2%;
+        padding: 2%;
+    }
+    .border1{
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    
+    .center{
+        justify-content: center;
+    }
+    .left{
+        flex: 0;
+        width: 40px;
+        border-radius: 4px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border: 1px solid gray;
+    }
+    .right{
+        flex: 1;
+        width: 0%;  
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border: 1px solid gray;
+    }
+    .margin{
+        margin: 2px;
+        padding: 2px;
+    }
+    .btn{
+        background-color: blue;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        /* border-style: 1px solid black ; */
+        border: 1px solid gray;
+        box-sizing: border-box;
+        color: white;
+        cursor: pointer;
+        /* display: inline-block; */
+        font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        /* height: 40px; */
+        /* line-height: 15px; */
+        list-style: none;
+        /* margin: 0; */
+        outline: none;  
+        /* padding: 10px 16px; */
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        transition: color 100ms;    
+        vertical-align: baseline;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+    }
+    .L{
+        height: 30px;
+    }
+    .S{
+        height: 18px;
+    }
+    .b{
+
+        border-style: none;
+    }
+    .img{
+        width: 25px;
+        height: auto;
+        }
+    .img1{
+        width: 15px;
+        height: 15px;
+    }
+
+</style>
+<body>
+
+    <div class="border flex">
+            <div class=" flex grow1"> <input class="grow1" type="text" placeholder="Basic usage"></div>
+    </div>
+
+    <div class="border flexcol">
+        <div class="L border1 margin flex grow1"> 
+            <img class="img" src="user.png" alt="">
+            <input class="b grow1 right" type="text" placeholder="Large size">
+        </div>
+        <div class=" border1 margin flex grow1"> 
+            <img class="img" src="user.png" alt="">
+            <input class="b grow1 right" type="text" placeholder="Default size">
+        </div>
+        <div class=" S border1 margin flex grow1"> 
+            <img  class="img" src="user.png" alt="">
+            <input class=" b grow1 right" type="text" placeholder="Small size">
+        </div>
+    </div>
+
+    <div class="border flexcol">
+        <div class=" margin flex grow1"> <input class="grow1" type="text" value="2688888"></div>
+        <div class=" margin grow1 flex"> 
+            <input class="left grow0" type="text" value="+855">
+            <input class="right grow1" type="text" value="2688888">
+        </div>
+        <div class=" margin grow1 flex"> 
+            <input class="left grow0" type="text" value="https://">
+            <input class="right grow1" type="text" placeholder="input search text">
+            <button style=" border-top-right-radius: 4px; border-bottom-right-radius: 4px; background-color: white; border: 1px solid gray;"><img class="img1" src="search-interface-symbol.png" alt=""></button>
+        </div>
+        <div class=" margin grow1 flex"> 
+            <input style="flex: 1; width: 0%; border: 1px solid gray; border-top-left-radius: 4px; border-bottom-left-radius: 4px;" class="grow1" type="text" value="Combine Input and button">
+            <button class=" btn grow0">Submit</button>
+        </div>
+
+    </div>
+
+</body>
+</html> 

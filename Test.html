@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1,minimal-ui" name="viewport">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/vue-material/dist/vue-material.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/vue-material/dist/theme/default.css">
+  </head>
+
+  <body>
+    <div id="app">
+      <!-- Your code here -->
+      <template>
+        <div>
+          <div>
+            <small>Flat</small>
+            <md-button class="md-icon-button">
+              <md-icon>home</md-icon>
+            </md-button>
+      
+            <md-button class="md-icon-button md-primary">
+              <md-icon>menu</md-icon>
+            </md-button>
+      
+            <md-button class="md-icon-button md-accent">
+              <md-icon>thumb_up</md-icon>
+            </md-button>
+      
+            <md-button class="md-icon-button" disabled>
+              <md-icon>add</md-icon>
+            </md-button>
+          </div>
+      
+          <div>
+            <small>Raised</small>
+            <md-button class="md-icon-button md-raised">
+              <md-icon>home</md-icon>
+            </md-button>
+      
+            <md-button class="md-icon-button md-raised md-primary">
+              <md-icon>menu</md-icon>
+            </md-button>
+      
+            <md-button class="md-icon-button md-raised md-accent">
+              <md-icon>thumb_up</md-icon>
+            </md-button>
+      
+            <md-button class="md-icon-button md-raised" disabled>
+              <md-icon>add</md-icon>
+            </md-button>
+          </div>
+      
+          <div>
+            <small>Dense</small>
+            <md-button class="md-icon-button md-dense md-primary">
+              <md-icon>person</md-icon>
+            </md-button>
+      
+            <md-button class="md-icon-button md-dense md-raised md-primary">
+              <md-icon>cached</md-icon>
+            </md-button>
+          </div>
+        </div>
+      </template>
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vue-material"></script>
+    <script>
+      Vue.use(VueMaterial.default)
+
+      new Vue({
+        el: '#app'
+      })
+    </script>
+  </body>
+</html>
