@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.parent {
+    height: 500px;
+    width: 500px;
+    background-color: orange;
+}
+
+.parent1 {
+    height: 69px;
+    border: 1px solid black;
+
+    display: flex;
+    align-items: center;
+}
+
+.
+
+.parent2 {
+    height: 160px;
+    border: 1px solid black;
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.child {
+    margin-top: 10px;
+}
+
+.parent3 {
+    height: 200px;
+    border: 1px solid black;
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.input-icons i {
+    position: absolute;
+}
+
+.child {
+    padding: 10px;
+}
