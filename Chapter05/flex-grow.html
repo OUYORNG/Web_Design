@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .parent {
+        width: 500px;
+        height: 80px;
+        background-color: orange;
+
+        display: flex;
+        gap: 10px
+
+    }
+
+    .child {
+        width: 50px;
+        height: 50px;
+        background-color: brown;
+        border: 1px solid black;
+        color: white;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #child1 {
+        flex-grow: 1;
+    }
+
+    #child2 {
+        flex-grow: 2;
+    }
+
+    #child3 {
+        flex-grow: 1;
+    }
+</style>
+<body>
+    <div class="parent">
+        <div class="child" id="child1">1</div>
+        <div class="child" id="child2">2</div>
+        <div class="child" id="child3">3</div>
+    </div>
+</body>
+</html>

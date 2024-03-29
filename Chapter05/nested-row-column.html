@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .flex {
+        border: 5px solid black;
+
+        display: flex;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .flex-grow-0 {
+        border: 5px solid orange;
+
+        flex-grow: 0;
+    }
+
+    .flex-grow-1 {
+        border: 5px solid orange;
+
+        flex-grow: 1;
+    }
+
+    .flex-col {
+        flex-direction: column;
+    }
+
+    .flex-grow {
+        border: 5px solid blue;
+
+        flex-grow: 1;
+    }
+
+</style>
+<body>
+    <div class="flex">
+        <div class="flex-grow-0">Content-width child</div>
+        <div class="flex-grow-1 flex flex-col">
+            <div class="flex-grow">Share-width child</div>
+            <div class="flex-grow">Share-width child</div>
+        </div>
+    </div>
+</body>
+</html>

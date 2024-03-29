@@ -6,181 +6,132 @@
     gap: 10px;
 }
 
-.parent1 {
+.p {
     height: 500px;
     background-color: green;
-    flex-grow: 1;
-
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 10px;
+}
+
+.parent1 {
+    flex-grow: 1;
 }
 
 .parent2 {
-    height: 500px;
-    background-color: green;
     flex-grow: 2;
-
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
 }
 
 .parent3 {
-    height: 500px;  
-    background-color: green;
     flex-grow:3;
-
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
 }
 
 /* ===parent1=== */
 
-.p1-child1 {
-    background-color: rgb(154, 255, 154);
-    flex-grow: 1;
+.p1child {
+    flex-grow: 0;
+    background-color: rgb(167, 255, 167);
     padding: 10px;
 }
 
-.p1-child2 {
-    background-color: rgb(154, 255, 154);
+.p1child-3 {
     flex-grow: 1;
-    padding: 10px;
-}
-
-.p1-child3 {
-    background-color: rgb(154, 255, 154);
-    flex-grow: 5;
-    padding: 10px;
 
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.p1-child4 {
-    background-color: rgb(154, 255, 154);
-    flex-grow: 1;
-    padding: 10px;
-}
-
-.p1-child5 {
-    background-color: rgb(154, 255, 154);
-    flex-grow: 1;
-    padding: 10px;
-}
-
-.p1-child6 {
-    background-color: rgb(154, 255, 154);
-    flex-grow: 1;
-    padding: 10px;
-}
-
-.p1-c3-1 {
+.p1subchild3 {
     background-color: white;
     flex-grow: 1;
-    padding: 10px;
 }
 
-.p1-c3-2 {
-    background-color: white;
-    flex-grow: 3;
-    padding: 10px;
+.p1article {
+    background-color: rgb(154, 255, 154);
+    flex-grow: 0;
 }
 
 /* ===parent2=== */
-
-.p2-child1 {
+.p2child {
+    flex-grow: 0;
     background-color: rgb(154, 255, 154);
-    flex-grow: 1;
     padding: 10px;
 }
 
-.p2-child2 {
-    background-color: rgb(154, 255, 154);
+.p2child-3 {
     flex-grow: 1;
-    padding: 10px;
-}
-
-.p2-child3 {
     background-color: green;
-    flex-grow: 5;
+    padding: 0px;
 
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
 
-.p2-child4 {
-    background-color: rgb(154, 255, 154);
+.p2child-3-box {
     flex-grow: 1;
-    padding: 10px;
-}
-
-.p2-child5 {
     background-color: rgb(154, 255, 154);
-    flex-grow: 1;
-    padding: 10px;
-}
-
-.p2-c3-1 {
-    background-color: rgb(154, 255, 154);
-    flex-grow: 1;
-    padding: 10px;
 
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-
-.p2-c3-2 {
-    background-color: rgb(154, 255, 154);
-    flex-grow: 3;
     padding: 10px;
 }
 
-.p2-c3-c1-1 {
+.p2child-3-box-left {
     background-color: white;
     flex-grow: 1;
     padding: 10px;
 }
 
-.p2-c3-c1-2 {
-    background-color: white;
-    flex-grow: 3;
-    padding: 10px;
+.p2article {
+    flex-grow: 0;
+    background-color: rgb(154, 255, 154);
+}
+
+.p2-article-header {
+    flex-grow: 0;
+}
+
+.p2child-3-box-2 {
+    display: flex;
+    justify-content: center;
 }
 
 /* ===parent3=== */
-
-.p3-child1 {
-    background-color: rgb(154, 255, 154);
-    flex-grow: 1;
-    padding: 10px;
-}
-
-.p3-child2 {
-    background-color: rgb(154, 255, 154);
-    flex-grow: 1;
-    padding: 10px;
-}
-
-.p3-child3 {
-    background-color: rgb(154, 255, 154);
-    flex-grow: 5;
-
+.flex {
     display: flex;
+}
+
+.flexrow {
     flex-direction: row;
+}
+
+.flexcol {
+    flex-direction: column;
+}
+
+.flexgrow0 {
+    flex-grow: 0;
     gap: 10px;
 }
 
-.p3-child4 {
-    background-color: rgb(154, 255, 154);
+.flexgrow1 {
     flex-grow: 1;
+    gap: 10px;
+}
+
+.child {
+    background-color: rgb(154, 255, 154);
     padding: 10px;
+}
+  
+.whitebox {
+    background-color: white;
+}
+
+.greenbox {
+    background-color: green;
 }

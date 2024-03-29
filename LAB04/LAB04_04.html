@@ -1,56 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="LAB04_04.css">
-</head>
-<body>
+    <link rel="stylesheet" href="LAB04_04.css" />
+  </head>
+  <body>
     <div class="grand-parent">
-        <div class="parent1">
-            <div class="p1-child1">Page Header</div>
-            <div class="p1-child2">Nav</div>
-            <div class="p1-child3">Article
-                <div class="p1-c3-1">Article Header</div>
-                <div class="p1-c3-2">Main</div>
-            </div>
-            <div class="p1-child4">Section</div>
-            <div class="p1-child5">Aside</div>
-            <div class="p1-child6">Footer</div>
+      <div class="p parent1">
+        <div class="p1child p1child-1">Page Header</div>
+        <div class="p1child p1child-2">Nav</div>
+        <div class="p1child p1child-3">
+          <div class="p1subchild3 p1article">Article</div>
+          <div class="p1subchild3 p1article-header">Article Header</div>
+          <div class="p1subchild3 p1main">Main</div>
         </div>
-        <div class="parent2">
-            <div class="p2-child1">Page Header</div>
-            <div class="p2-child2">Nav</div>
-            <div class="p2-child3">Article
-                <div class="p2-c3-1">
-                    <div class="p2-c3-c1-1">Article Header</div>
-                    <div class="p2-c3-c1-2">Main</div>
-                </div>
-                <div class="p2-c3-1">Asid</div>
-            </div>
-            <div class="p2-child4">Section</div>
-            <div class="p2-child5">Aside</div>
-        </div>
-        <div class="parent3">
-            <div class="p3-child1">Page Header</div>
-            <div class="p3-child2">Nav</div>
-            <div class="p3-child3">Article
-                <div class="p3-c3-1">
-                    <div class="p3-c3-1-1">
-        
-                    </div>
-                    <div class="p3-c3-1-2></div>
-                </div>
-                <div class="p3-c3-child2">
-                    <div>
+        <div class="p1child p1child-4">Section</div>
+        <div class="p1child p1child-5">Aside</div>
+        <div class="p1child p1child-6">Footer</div>
+      </div>
 
-                    </div>
-                    <div></div>
-                </div>
+      <div class="p parent2">
+        <div class="p2child p2child-1">Page Header</div>
+        <div class="p2child p2childp-2">Nav</div>
+        <div class="p2child p2child-3">
+          <div class="p2child-3-box p2child-3-box-1">
+            <div class="p2child-3-box-left p2article">Article</div>
+            <div class="p2child-3-box-left p2-article-header">
+              Article Header
             </div>
-            <div class="p3-child4">Section</div>
+            <div class="p2child-3-box-left p2-main">Main</div>
+          </div>
+          <div class="p2child-3-box p2child-3-box-2 p2aside">Asid</div>
         </div>
+        <div class="p2child p2child-4">Section</div>
+        <div class="p2child p2child-5">Aside</div>
+      </div>
+
+      <div class="p parent3">
+        <div class="child flexgrow0">Page Header</div>
+        <div class="child flexgrow0">Nav</div>
+        <div class="flexgrow1 flex flexrow">
+          <div class="greenbox flexgrow1 flex flexcol">
+            <div class="child flexgrow1 flex flexcol">
+              <div class="flexgrow0">Article</div>
+              <div class="whitebox flexgrow0" style="padding: 10px">
+                Article Header
+              </div>
+              <div class="whitebox flexgrow1">Main</div>
+            </div>
+            <div class="child flexgrow1">Section</div>
+          </div>
+          <div class="greenbox flexgrow0 flex flexcol">
+            <div
+              class="child flexgrow1 flex flexrow greenbox"
+              style="padding: 0px"
+            >
+              <div class="child flexgrow1">Aside</div>
+              <div class="child flexgrow1">Aside</div>
+            </div>
+            <div class="child flexgrow1" style="flex: 4">Aside</div>
+          </div>
+        </div>
+        <div class="child flexgrow0">Section</div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
