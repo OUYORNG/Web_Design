@@ -1,0 +1,115 @@
+.parent {
+  margin: 20px auto;
+  height: 500px;
+  width: 800px;
+  border: 5px solid black;
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+}
+
+.flexcol {
+  flex-direction: column;
+}
+
+.flexrow {
+  flex-direction: row;
+}
+
+.flexgrow0 {
+  flex-grow: 0;
+}
+
+.flexgrow1 {
+  flex-grow: 1;
+}
+
+img {
+  height: 500px;
+}
+
+/* .orange {
+  background-color: orange;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.red {
+  background-color: red;
+}
+
+.white {
+  background-color: white;
+} */
+
+.padding {
+  padding: 10px;
+}
+
+.center-horizontal {
+  justify-content: center;
+}
+
+.center-vertical {
+  align-items: center;
+}
+
+.button-sign-in {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.button-sign-in-with-google {
+  background-color: white;
+  border: 1px solid rgb(43, 43, 43);
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.password-field {
+  width: 100%;
+}
+
+.fa-user-circle-o {
+  color: orange;
+}
+
+.fa-google {
+  font-size: large;
+  color: red;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.wrapper button {
+  position: absolute;
+  right: 0;
+  padding: 10px;
+}

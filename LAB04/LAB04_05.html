@@ -1,11 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    hello
-</body>
+    <link rel="stylesheet" href="LAB04_05.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="parent flex flexrow">
+      <div class="flexgrow1 red flex flexcol">
+        <div class="flexgrow1 orange flex flexrow padding">
+          <div>
+            <h3><i class="fa fa-user-circle-o"></i> HorizonUI</h3>
+          </div>
+        </div>
+        <div class="flexgrow1 orange flex flexrow">
+          <div class="flexgrow0 yellow"></div>
+          <div class="flexgrow1 yellow flex flexcol">
+            <div class="flexgrow1 white flex flexcol" style="gap: 0px">
+              <div class="flexgrow1">
+                <strong style="font-size: x-large">Walcome back!</strong>
+              </div>
+              <div class="flexgrow1">
+                Pleae enter your credentials to access your account
+              </div>
+            </div>
+            <div class="flexgrow1 white flex">
+              <button class="button-sign-in-with-google">
+                <i class="fa fa-google"></i>
+                <b>Sign in with Google</b>
+              </button>
+            </div>
+            <div class="flexgrow1 white flex center-horizontal">
+              <div>
+                ------------------------------------or---------------------------------------
+              </div>
+            </div>
+            <div class="flexgrow1 white flex flexcol">
+              <div>Email*</div>
+              <div class="flex">
+                <input
+                  class="flexgrow1 padding"
+                  type="text"
+                  placeholder="name@gmail.com"
+                />
+              </div>
+            </div>
+            <div class="flexgrow1 white flex flexcol">
+              <div class="flexgrow1">Password*</div>
+              <div class="flexgrow1 red flex flexrow wrapper">
+                <input
+                  class="flexgrow1 padding"
+                  type="text"
+                  placeholder="Min 8 Character"
+                />
+                <button class="flexgrow0"><i class="fa fa-eye"></i></button>
+              </div>
+            </div>
+            <div class="flexgrow1 white flex flexrow">
+              <div class="flexgrow0"><input type="checkbox" /></div>
+              <div class="flexgrow1">Remember me</div>
+              <div class="flexgrow0"><a href="#">Forget Password?</a></div>
+            </div>
+            <div class="flexgrow1 white flex">
+              <button class="button-sign-in">Sign In</button>
+            </div>
+            <div class="flexgrow1 white">
+              No registered yet?
+              <a href="#">Create an Account</a>
+            </div>
+          </div>
+          <div class="flexgrow0 yellow"></div>
+        </div>
+        <div class="flexgrow1 orange"></div>
+      </div>
+
+      <div class="flexgrow0 orange flex">
+        <div class="flexgrow1"><img src="lifeguard-tower.jpg" alt="" /></div>
+      </div>
+    </div>
+  </body>
 </html>
