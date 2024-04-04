@@ -1,0 +1,20 @@
+.grid {
+  width: 80%;
+  background-color: rgb(202, 200, 200);
+  margin: auto;
+  padding: 5px;
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 5px;
+  row-gap: 5px;
+}
+
+.box {
+  background-color: rgb(21, 151, 168);
+  padding: 10px;
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+}

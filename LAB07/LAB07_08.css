@@ -1,0 +1,17 @@
+.drop {
+  position: absolute;
+  animation-name: funny;
+  animation-duration: 1s;
+  animation-delay: calc(var(--order) * 0.5s);
+  animation-fill-mode: forwards;
+  margin-left: calc(var(--order) * 25px);
+}
+
+@keyframes funny {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 200px;
+  }
+}

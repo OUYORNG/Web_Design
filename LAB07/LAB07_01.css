@@ -1,0 +1,53 @@
+.parent {
+  width: 600px;
+  height: 500px;
+  margin: auto;
+}
+
+.border {
+  border: 2px solid black;
+}
+
+.flex {
+  display: flex;
+}
+
+.flexrow {
+  flex-direction: row;
+}
+
+.flexcol {
+  flex-direction: column;
+}
+
+.flexgrow1 {
+  flex-grow: 1;
+}
+
+.flexgrow0 {
+  flex-grow: 0;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.green {
+  background-color: rgb(53, 170, 53);
+}
+
+.grey {
+  background-color: grey;
+}
+
+.blue {
+  background-color: rgb(55, 55, 247);
+}
+
+.red {
+  background-color: rgb(248, 62, 62);
+}
+
+.purple {
+  background-color: purple;
+}

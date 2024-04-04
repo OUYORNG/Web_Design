@@ -1,0 +1,46 @@
+.row-wrapper {
+  width: 800px;
+  background-color: rgb(180, 180, 180);
+  margin: auto;
+  padding: 10px;
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+}
+
+.flexrow {
+  flex-direction: row;
+}
+
+.flexcol {
+  flex-direction: column;
+}
+
+.flexgrow1 {
+  flex-grow: 1;
+}
+
+.flexgrow0 {
+  flex-grow: 0;
+}
+
+/* .orange {
+  background-color: orange;
+} */
+
+.box {
+  background-color: blue;
+  border-radius: 5px;
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.column-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

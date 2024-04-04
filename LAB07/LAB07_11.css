@@ -1,0 +1,47 @@
+.border {
+  border: 2px solid black;
+  width: 550px;
+  height: 400px;
+}
+
+.parent {
+  margin: 10px;
+  display: grid;
+  grid-gap: 10px;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(2, 1fr);
+  overflow-x: auto;
+}
+
+.box {
+  background-color: rgb(21, 151, 168);
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+
+.header {
+  background-color: grey;
+  font-size: x-large;
+  color: white;
+  padding: 20px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flexcol {
+  flex-direction: column;
+}
+
+.flexgrow0 {
+  flex-grow: 0;
+}
+
+.flexgrow1 {
+  flex-grow: 1;
+}
