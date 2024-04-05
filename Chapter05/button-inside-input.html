@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show/Hide Password</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <style>
+      .input-wrapper {
+        position: relative;
+        display: inline-block;
+      }
+
+      .input-wrapper input {
+        padding-right: 30px;
+      }
+
+      .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        border: none;
+        background: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="input-wrapper">
+      <input id="password" type="password" placeholder="Password" />
+      <button class="toggle-password" onclick="togglePasswordVisibility()">
+        <i id="toggleIcon" class="fas fa-eye"></i>
+      </button>
+    </div>
+
+    <script>
+      function togglePasswordVisibility() {
+        var passwordInput = document.getElementById("password");
+        var toggleIcon = document.getElementById("toggleIcon");
+        if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+          toggleIcon.classList.remove("fa-eye");
+          toggleIcon.classList.add("fa-eye-slash");
+        } else {
+          passwordInput.type = "password";
+          toggleIcon.classList.remove("fa-eye-slash");
+          toggleIcon.classList.add("fa-eye");
+        }
+      }
+    </script>
+  </body>
+</html>

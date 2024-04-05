@@ -1,52 +1,91 @@
-body {
-    display: flex;
-    justify-content: center;
+.flex {
+  display: flex;
+}
+.grow1 {
+  flex-grow: 1;
+}
+.grow0 {
+  flex-grow: 0;
+}
+.flexcol {
+  display: flex;
+  flex-direction: column;
+}
+.border {
+  border: 2px solid black;
+  margin: 2%;
+  padding: 2%;
+}
+.border1 {
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
-.parent {
-    height: 500px;
-    width: 500px;
-    background-color: orange;
+.center {
+  justify-content: center;
 }
-
-.parent1 {
-    height: 69px;
-    border: 1px solid black;
-
-    display: flex;
-    align-items: center;
+.left {
+  flex: 0;
+  width: 40px;
+  border-radius: 4px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border: 1px solid gray;
 }
-
-.
-
-.parent2 {
-    height: 160px;
-    border: 1px solid black;
-    margin-top: 10px;
-
-    display: flex;
-    flex-direction: column;
-    padding: 0 10px;
+.right {
+  flex: 1;
+  width: 0%;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border: 1px solid gray;
 }
-
-.child {
-    margin-top: 10px;
+.margin {
+  margin: 2px;
+  padding: 2px;
 }
-
-.parent3 {
-    height: 200px;
-    border: 1px solid black;
-    margin-top: 10px;
-
-    display: flex;
-    flex-direction: column;
-    padding: 0 10px;
+.btn {
+  background-color: blue;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  /* border-style: 1px solid black ; */
+  border: 1px solid gray;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  /* display: inline-block; */
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  /* height: 40px; */
+  /* line-height: 15px; */
+  list-style: none;
+  /* margin: 0; */
+  outline: none;
+  /* padding: 10px 16px; */
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
-
-.input-icons i {
-    position: absolute;
+.L {
+  height: 30px;
 }
-
-.child {
-    padding: 10px;
+.S {
+  height: 18px;
+}
+.b {
+  border-style: none;
+}
+.img {
+  width: 25px;
+  height: auto;
+}
+.img1 {
+  width: 15px;
+  height: 15px;
 }

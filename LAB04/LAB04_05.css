@@ -80,7 +80,7 @@ img {
 }
 
 .fa-user-circle-o {
-  color: orange;
+  color: blue;
 }
 
 .fa-google {
@@ -112,4 +112,8 @@ a:active {
   position: absolute;
   right: 0;
   padding: 10px;
+}
+
+button:hover {
+  background-color: orange;
 }

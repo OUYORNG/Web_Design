@@ -1,27 +1,26 @@
 .parent {
-    width: 200px;
-    height: 200px;
-    background-color: grey;
-    position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: grey;
+  position: relative;
 }
 
 .child {
-    position: absolute;
-    left: 50%;
-    width: 70px;
-    height: 70px;
-    background-color: orange;
+  position: absolute;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  background-color: orange;
 }
 
 .sub-child {
-    position: relative;
-
+  position: relative;
 }
 
 .text {
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
 }
