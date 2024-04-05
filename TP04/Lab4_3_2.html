@@ -44,10 +44,8 @@
         .left{
             justify-content: center;
             align-items: center;
-            width: 70%;
         }
         .left1{
-            width: 30%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -56,17 +54,17 @@
     </style>
 </head>
 <body>
-    <div class="flexcol backcolor ">
+    <div class="flexcol border backcolor ">
         <div class="flexgrow0 border boxcolor">Page Header</div>
         <div class="flexgrow1 border boxcolor">Navigation</div>
 
         <div class=" flex border boxcsolor">
-            <div class=" border left">
-                <p class="">Article</p>
-                <p class="border boxcolor1">Article header</p>
+            <div  style="flex: 3;" class=" border left">
+                <div class="">Article</div>
+                <div class="border boxcolor1">Article header</div>
                 <p class="border main boxcolor1">Main</p>
             </div>
-            <div class=" border boxcolor left1">
+            <div style="flex: 1;" class="  border boxcolor left1">
                 <p>Aside</p>
             </div>
         </div>

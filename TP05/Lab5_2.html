@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .border
+        {
+            border: 1px solid black;
+            padding: 2px;
+            margin: 2px;
+        }
+        .flex{
+            display: flex;
+        }
+        .flexcol{
+            flex-direction: column;
+        }
+        .grow1{
+            flex-grow: 1;
+        }
+        .grow0{
+            flex-grow: 0;
+        }
+        .wrapper{
+            width: 200px;
+            height: 200px;
+        }
+        .child{
+            /* width: auto;
+            height: auto; */
+            padding: 5%;
+            color: white;
+            border: 1px solid orange;
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .p1{
+            display: flex;
+            /* justify-content: center; */
+            align-items: start;
+        }
+        .p2{
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+        }
+        .p3{
+            display: flex;
+            /* justify-content: end; */
+            align-items: end;
+        }
+        .relative{
+            position: relative;
+        }
+        .absolute{
+            position: absolute;
+        }
+        .a3{
+            position: absolute;
+            top: 40%;
+            bottom: 40%;
+            left: 0%;
+            right: 0%;
+            /* translate: -50% -50%; */
+        }
+        .a2{
+            position: absolute;
+            top: 0%;
+            bottom: 0%;
+            left: 0%;
+            right: 75%;
+            /* translate: -50% -50%;   */
+        }
+        .a4{
+            position: absolute;
+            top: 0%;
+            bottom: 0%;
+            left: 75%;
+            right: 0%;
+            /* translate: -50% -50%;   */
+        }
+    </style>
+</head>
+<body>
+    <div class="border">
+        <div>Using Flex</div>
+            <div class="flex">
+                <div class="wrapper grow1 border">
+                    <div class="child">child</div>
+                </div>
+                <div class="wrapper flexcol p1 grow1 border">
+                    <div class="child grow1">child1</div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="wrapper p2 grow1 border">
+                    <div class="child grow1">child</div>
+                </div>
+                <div class="wrapper p3 grow1 flexcol border">
+                    <div class="child grow1">child</div>
+                </div>
+            </div>
+        <div>Using position</div>
+        <div class="flex">
+            <div class="wrapper relative border">
+                <div class="child a1">child</div>
+            </div>
+            <div class="wrapper relative border">
+                <div class="child a2">child</div>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="wrapper relative border">
+                <div class="child a3">child</div>
+            </div>
+            <div class="wrapper relative border">
+                <div class="child a4">child</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

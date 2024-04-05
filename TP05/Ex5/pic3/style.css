@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    margin: 100px;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+    border: solid 5px lightgray;
+}
+
+.container-box {
+    position: absolute;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background-color: orange;
+
+}
+
+.box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+
+}
+
+.child {
+
+    position: absolute;
+    width: 90%;
+    height: 30%;
+    background-color: rgb(22, 22, 92);
+
+}
+
+.box-1 {
+
+    left: 50%;
+    top: 5%;
+    translate: -50% -7%;
+
+}
+
+.box-2 {
+
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+}
+
+.box-3 {
+
+
+    left: 50%;
+    bottom: 1%;
+    translate: -50% -7%;
+}

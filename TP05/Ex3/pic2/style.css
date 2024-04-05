@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+    border: solid 5px lightgray;
+}
+.container-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    width: 70px;
+    height: 200px;
+    background-color: orange;
+}
+.child{
+    margin:6px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(5, 5, 124);
+}
