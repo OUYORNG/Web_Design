@@ -1,0 +1,106 @@
+.box-wrap {
+  border: 2px solid black;
+  height: 500px;
+  width: 500px;
+
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(180, 180, 180);
+  display: flex;
+  padding: 5px;
+}
+
+.child {
+  width: 70px;
+  height: 70px;
+  background-color: orange;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box2 {
+  align-items: end;
+}
+
+.box3 {
+  justify-content: center;
+  align-items: center;
+}
+
+.box4 {
+  justify-content: end;
+  align-items: center;
+}
+
+/* ===================================================== */
+
+.box-wrap-2 {
+  border: 2px solid black;
+  height: 500px;
+  width: 500px;
+
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.box-2 {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(180, 180, 180);
+  display: flex;
+  padding: 5px;
+
+  position: relative;
+}
+
+.child-2 {
+  width: 70px;
+  height: 70px;
+  background-color: orange;
+  color: white;
+
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+}
+
+#child-2-1 {
+  position: absolute;
+  left: 5px;
+}
+
+#child-2-2 {
+  position: absolute;
+  bottom: 5px;
+}
+
+#child-2-3 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+}
+
+#child-2-4 {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  translate: 0 -50%;
+}

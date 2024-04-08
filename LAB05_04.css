@@ -1,0 +1,64 @@
+.wrapper {
+  width: 500px;
+  height: 500px;
+  border: 2px solid black;
+}
+
+.flex {
+  display: flex;
+}
+
+.flexrow {
+  flex-direction: row;
+}
+
+.flexcol {
+  flex-direction: column;
+}
+
+.flexgrow0 {
+  flex-grow: 0;
+}
+
+.flexgrow1 {
+  flex-grow: 1;
+}
+
+.width {
+  width: 70px;
+}
+
+.height {
+  height: 70px;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.blue {
+  background-color: rgb(2, 2, 190);
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: grey;
+}
+
+.gap40 {
+  gap: 40px;
+}
+
+.gap {
+  gap: 5px;
+}
+
+.padding {
+  padding: 5px;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}

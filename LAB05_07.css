@@ -1,0 +1,92 @@
+.parent {
+  width: 500px;
+  height: 500px;
+  border: 2px solid black;
+
+  position: relative;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: grey;
+
+  position: absolute;
+}
+
+.box-1 {
+  top: 5%;
+  left: 5%;
+}
+.box-2 {
+  top: 5%;
+  right: 5%;
+}
+.box-3 {
+  bottom: 5%;
+  left: 50%;
+  translate: -50%;
+}
+
+.child {
+  position: absolute;
+  background-color: orange;
+}
+.box-1-child-1 {
+  width: 70%;
+  height: 20%;
+  top: 10%;
+  left: 50%;
+  translate: -50%;
+}
+.box-1-child-2 {
+  width: 20%;
+  top: 10%;
+  bottom: 10%;
+  left: 50%;
+  translate: -50%;
+}
+.box-1-child-3 {
+  width: 70%;
+  height: 20%;
+  bottom: 10%;
+  left: 50%;
+  translate: -50%;
+}
+
+.box-2-child-1 {
+  width: 70%;
+  height: 20%;
+  top: 10%;
+  left: 50%;
+  translate: -50%;
+}
+.box-2-child-2 {
+  width: 20%;
+  top: 10%;
+  bottom: 10%;
+  left: 50%;
+  translate: -50%;
+}
+
+.box-3-child-1 {
+  width: 60%;
+  height: 20%;
+  top: 10%;
+  left: 50%;
+  translate: -50%;
+}
+.box-3-child-2 {
+  width: 20%;
+  top: 10%;
+  bottom: 10%;
+  left: 30%;
+  translate: -50%;
+}
+.box-3-child-3 {
+  width: 60%;
+  height: 20%;
+  bottom: 10%;
+  left: 50%;
+  translate: -50%;
+}

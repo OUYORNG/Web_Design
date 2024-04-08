@@ -1,0 +1,42 @@
+.parent {
+  width: 700px;
+  height: 700px;
+  border: 2px solid black;
+
+  position: relative;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: grey;
+}
+
+.box-1 {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}
+.box-2 {
+  position: absolute;
+  bottom: 20%;
+  right: 20%;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  position: absolute;
+}
+
+.child-1-box-1 {
+  top: 50%;
+  left: -50%;
+  translate: 50% -50%;
+}
+.child-1-box-2 {
+  left: 50%;
+  bottom: -50%;
+  translate: -50% -50%;
+}
