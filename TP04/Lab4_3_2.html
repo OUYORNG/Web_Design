@@ -7,7 +7,7 @@
     <style>
         .flex{
             display: flex;
-            border: 2px solid black;
+            border: 0px solid black;
             flex-grow: 2;
         }
         .flexcol{
@@ -44,8 +44,10 @@
         .left{
             justify-content: center;
             align-items: center;
+            width: 70%;
         }
         .left1{
+            width: 30%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -54,17 +56,17 @@
     </style>
 </head>
 <body>
-    <div class="flexcol border backcolor ">
+    <div class="flexcol backcolor ">
         <div class="flexgrow0 border boxcolor">Page Header</div>
         <div class="flexgrow1 border boxcolor">Navigation</div>
 
-        <div class=" flex border boxcsolor">
-            <div  style="flex: 3;" class=" border left">
-                <div class="">Article</div>
-                <div class="border boxcolor1">Article header</div>
+        <div style="background-color: ;" class=" flex  boxcsolor">
+            <div class=" border left">
+                <p class="">Article</p>
+                <p class="border boxcolor1">Article header</p>
                 <p class="border main boxcolor1">Main</p>
             </div>
-            <div style="flex: 1;" class="  border boxcolor left1">
+            <div class=" border boxcolor left1">
                 <p>Aside</p>
             </div>
         </div>

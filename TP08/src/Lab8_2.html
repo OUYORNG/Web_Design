@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+            .flex{
+            display: flex;
+        }
+        .grow1{
+            flex-grow: 1;
+        }
+        .grow0{
+            flex-grow: 0;
+        }
+        .border{
+            border: 2px solid gray;
+            border-radius: 20px;
+        }
+        .allcenter{
+            align-items: center;
+            justify-content: center
+        }
+        button{
+            border: transparent;
+            background-color: rgb(160, 195, 215);
+        }
+        button:hover{
+            background-color: white;
+            
+        }
+        img{
+            width: 80%;
+            height: auto;
+            border-radius:10px;
+        }
+        /* button:active{
+            background-color: white;
+        } */
+        button:focus{
+            background-color: white;
+        }
+</style>
+<script>
+    function history(){
+        var his = document.getElementById("Title").innerHTML="History";
+        var title = document.getElementById("context").innerHTML="history context";        
+    }
+    function Vision(){
+        var his = document.getElementById("Title").innerHTML="Visions";
+        var title = document.getElementById("context").innerHTML="goals contextsaasd a a";        
+    }
+    function Goals(){
+        var his = document.getElementById("Title").innerHTML="Goals";
+        var title = document.getElementById("context").innerHTML="goals context";        
+    }
+</script>
+<body>
+    <div style="height: 100vh; background-color: beige;" class="parent">
+        <div class=" flex about allcenter">
+            <h1>About</h1>
+        </div>
+        <div style="margin: -35px 0 20px 0;" class="flex allcenter describ">
+            <p>Lorem the personality de sit arnet</p>
+        </div>
+        <div class="contentpic flex allcenter">
+            <img src="image.png" alt="">
+        </div>
+        <div style="margin: 30px 0 0 0; display: flex; justify-content: space-around;" class="3btn ">
+            <button id="History" onclick="history()" style="border-top-left-radius: 20px;" class="grow1 history">
+                <h3>History</h3>
+            </button>
+            <button id="Vision" onclick="Vision()" class="grow1 history">
+                <h3>Vision</h3>
+            </button>
+            <button id="Goals" onclick="Goals()" style="border-top-right-radius: 20px;" class="grow1 history">
+                <h3>Goals</h3>
+            </button>
+        </div>
+        <div style=" width: 100%, height: auto; padding: 5px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px ; background-color: white;" class="content">
+            <h3 id="Title" class="title">History</h3>
+            <p id="context" class="context">I'm baby wolf picked</p>
+        </div>
+    </div>
+</body>
+</html> 
