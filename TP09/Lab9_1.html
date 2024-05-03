@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<style>
+    div button{
+        border: 2px solid black;
+        border-radius: 7px;
+        padding: 5px;
+
+    }
+    button:hover{
+        background-color: black;
+        color: white;
+    }
+</style>
+<body>
+    <div style="height: 100vh;" class="container flex flex-col justify-center items-center gap-8 ">
+        <h1  class="font-bold text-6xl text-blue-950 ">Counter</h1>
+        <div class="num text-7xl text-green-500">0</div>
+        <div class="operatebtn flex gap-5">
+            <button class="decrease">DECREASE</button>
+            <button class="reset">RESET</button>
+            <button class="increase">INCREASE</button>
+        </div>
+    </div>
+    <script>
+        const decrease = document.querySelector(".decrease")
+        const reset = document.querySelector(".reset")
+        const increase = document.querySelector(".increase")
+        const num = document.querySelector(".num")
+
+        class counter{
+            number = 0;
+            constructor(){
+            }
+            decrease(){
+                this.number --
+                console.log(this.number)
+                return this.number
+            }
+            reset(){
+                this.number = 0
+                console.log(this.number)
+
+                return this.number
+            }
+            increase(){
+                this.number ++
+                console.log(this.number)
+                return this.number
+            }
+        }
+        
+        let counter1 = new counter()
+        decrease.addEventListener("click", function(){
+            let t = counter1.decrease()
+            num.innerHTML = t
+        })
+        reset.addEventListener("click", function(){
+            let t = counter1.reset()
+            num.innerHTML = t
+        })
+        increase.addEventListener("click", function(){
+            let t = counter1.increase()
+            num.innerHTML = t
+        })
+
+
+    </script>
+</body>
+</html>

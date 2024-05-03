@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding Sidebar</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    .sidebar {
+    position: fixed;
+    right: -250px; /* Initially hide the sidebar */
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    transition: left 0.3s ease; /* Add transition for smooth animation */
+}
+
+.content {
+    margin-left: 20px; /* Adjust content margin to accommodate the sidebar */
+}
+
+    </style>
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+    <div class="content">
+        <button onclick="toggleSidebar()">Toggle Sidebar</button>
+    </div>
+    <script >
+        function toggleSidebar() {
+    var sidebar = document.getElementById("sidebar");
+    if (sidebar.style.left === "-250px") {
+        // If sidebar is hidden, show it
+        sidebar.style.left = "0";
+    } else {
+        // If sidebar is visible, hide it
+        sidebar.style.left = "-250px";
+    }
+}
+
+    </script>
+</body>
+</html>
