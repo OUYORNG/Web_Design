@@ -20,7 +20,7 @@
     }
 </style>
 <body>
-    <div style="height: 100vh;" class="container flex flex-col justify-center items-center gap-8 ">
+    <div class="container h-[100vh] flex flex-col justify-center items-center gap-8 ">
         <h1  class="font-bold text-6xl text-blue-950 ">Counter</h1>
         <div class="num text-7xl text-green-500">0</div>
         <div class="operatebtn flex gap-5">
@@ -41,37 +41,31 @@
             }
             decrease(){
                 this.number --
-                console.log(this.number)
                 return this.number
             }
             reset(){
                 this.number = 0
-                console.log(this.number)
-
                 return this.number
             }
             increase(){
                 this.number ++
-                console.log(this.number)
                 return this.number
             }
         }
         
         let counter1 = new counter()
-        decrease.addEventListener("click", function(){
+        decrease.addEventListener("click", ()=>{
             let t = counter1.decrease()
-            num.innerHTML = t
+            num.textContent = t
         })
-        reset.addEventListener("click", function(){
+        reset.addEventListener("click", ()=>{
             let t = counter1.reset()
-            num.innerHTML = t
+            num.textContent = t
         })
-        increase.addEventListener("click", function(){
+        increase.addEventListener("click", () =>{
             let t = counter1.increase()
-            num.innerHTML = t
+            num.textContent = t
         })
-
-
     </script>
 </body>
 </html>

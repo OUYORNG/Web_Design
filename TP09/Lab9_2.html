@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head> 
+<body class="bg-blue-300">
+    <div class="container m-2 p-2">
+        <div class="header flex justify-center p-2 font-bold text-2xl bg-white rounded-md  text-blue-500 border-white border-2">Random color generator</div>
+        <div class="generator">
+            <div class="content bg-black flex flex-col justify-center items-center p-4">
+                <div class="text-white text-4xl">Background color :</div>
+                <h1 class="text-blue-500 font-bold">Code color</h1>
+            </div>
+            <div class="flex justify-center mt-4">
+                <div class="btn">
+                    <button class="pl-6 pr-6 generate text-white bg-black border-2 border-black rounded-md p-2">GENERATE</button>
+                    <button class="pl-6 pr-6 reset rounded-md border-2 border-black p-2">RESET</button>
+                </div>
+            </div>
+            <div class="mt-4 color_generated gap-2 flex flex-col">
+                <div class="flex gap-2">
+                    <h1 id="t1">#000000</h1>
+                    <input type="color" class="w-4" name="color1" id="c1">
+                </div>
+                <div class="flex gap-2">
+                    <h1 id="t2">#000000</h1>
+                    <input type="color" class="w-4" name="color1" id="c2">
+                </div>
+                <div class="flex gap-2">
+                    <h1 id="t3">#000000</h1>
+                    <input type="color" class="w-4" name="color1" id="c3">
+                </div>
+                <div class="flex gap-2">
+                    <h1 id="t4">#000000</h1>
+                    <input type="color" class="w-4" name="color1" id="c4">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        class color{
+    colortype = ''
+    record = []
+    constructor(){
+        // this.colortype = colortype
+    }
+    generate(){
+        for(let i= 0; i < 4 ;i++ ){
+            this.record[i]  = this.getRandomnumber()
+        }
+    }
+    getRandomnumber(){
+        var letters = '0123456789ABCDEF';
+        var color1 = '#';
+        for (var i = 0; i < 6; i++) {
+            color1 += letters[Math.floor(Math.random() * 16)];
+        }
+        console.log(color1)
+        return color1;
+    }
+    reset(){
+        this.record = ["#000000","#000000","#000000","#000000"];    
+    }
+    getRecord(){
+        return this.record;
+    }
+}
+
+let color2 = new color();
+let generate = document.querySelector(".generate").addEventListener("click", () =>{
+    color2.generate()
+    document.querySelector("#c1").value = color2.record[0]
+    document.querySelector("#c2").value = color2.record[1]
+    document.querySelector("#c3").value = color2.record[2]
+    document.querySelector("#c4").value = color2.record[3]
+    document.querySelector("#t1").textContent = color2.record[0]
+    document.querySelector("#t2").textContent = color2.record[1]
+    document.querySelector("#t3").textContent = color2.record[2]
+    document.querySelector("#t4").textContent = color2.record[3]
+})
+let reset = document.querySelector(".reset").addEventListener("click", () =>{
+    color2.reset()
+    document.querySelector("#c1").value = color2.record[0]
+    document.querySelector("#c2").value = color2.record[1]
+    document.querySelector("#c3").value = color2.record[2]
+    document.querySelector("#c4").value = color2.record[3]
+    document.querySelector("#t1").textContent = color2.record[0]
+    document.querySelector("#t2").textContent = color2.record[1]
+    document.querySelector("#t3").textContent = color2.record[2]
+    document.querySelector("#t4").textContent = color2.record[3]    
+})
+
+
+    </script>
+</body>
+</html>

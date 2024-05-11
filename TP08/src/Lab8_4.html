@@ -7,34 +7,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
-    <style>
-        /* @keyframes rotateAnimation {
-            from {
-                transform: rotate(0deg);
-            }
-            to {
-                transform: rotate(90deg);
-            }
-        }
-        @keyframes rotatereverse {
-            from {
-                transform: rotate(90deg);
-            }
-            to {
-                transform: rotate(0deg);
-            }
-        }
-        .active{
-            transform: rotate(90deg);
-        }
-        .Inactive{
-            transform: rotate(0deg);
-        }
-        .controllbtn{
-            display: none;
-        } */
-    </style>
-
 </head>
 <body class="body m-5 bg-gray-300">
     <div class="nav flex justify-between bg-white p-4 rounded-md border-white border-4">
@@ -72,22 +44,17 @@
         let menubtn = document.querySelector(".menubtn")
             controllpanel = document.querySelector(".controllbtn")
 
-            function open (){
+            function openPanel(){
                 controllpanel.style.display = "block"
                 console.log("open")
-                on()
+                menuRotate()
             }
-
-            // function on(){
-            //     let istrue = true;
-            //     if(istrue){
-            //         menubtn.style.animation = "rotateAnimation 1s";
-            //         menubtn.classList.toggle("active")
-            //         istrue = false;
-            //     }
-            // }
-
-            function on(){
+            function closePanel (){
+                controllpanel.style.display = "none"
+                console.log("close")
+                menuRevRotate()
+            }
+            function menuRotate(){
                 let id = null;
                 clearInterval(id);
                 id = setInterval(frame,5);
@@ -100,7 +67,7 @@
                     }
                 }
             }
-            function off(){
+            function menuRevRotate(){
                 let id = null;
                 clearInterval(id);
                 id = setInterval(frame,5);
@@ -113,24 +80,19 @@
                     }
                 }
             }
-            function close (){
-                controllpanel.style.display = "none"
-                console.log("close")
-                off()
-            }
 
             document.addEventListener("click", function(e){
                 getstyle = window.getComputedStyle(controllpanel)
                 if(e.target != menubtn && getstyle.display == "block"){
-                    close();
+                    closePanel();
                 }
             })
             menubtn.addEventListener("click", () =>{
                 getstyle = window.getComputedStyle(controllpanel)
                 if(getstyle.display == "none"){
-                    open();
+                    openPanel();
                 }else{
-                    close();
+                    closePanel();
                 }
             })
 
